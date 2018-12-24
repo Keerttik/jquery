@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>titan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="demo.js"></script>
+
+
+    <script>
+        
+    var fname; //
+    var lname ;// 
+    var json = [{}];
+
+    function display(){
+    
+    fname = $("#fname").val();
+    lname = $("#lname").val();
+
+    json.push({"fname":fname,"lname":lname});
+    console.table([json]);
+
+    };
+
+
+function edited(){
+    $(":text").attr("value", "");
+}
+    
+    </script>
+
+
+</head>    
+<body>
+    <h1>Please Login</h1>
+    <form id="form" action="">
+        <label for="">first name: </label>
+        <input id="fname" type="text" placeholder="first name" required>
+
+        <br>
+
+        <label for="">last name: </label>
+        <input id="lname" type="text" placeholder="last name" required>
+
+        <br>    
+
+
+        <input type="button" value="Press enter" class="btn" onclick="display()">
+
+        <br>
+        <input class="btn"  type="button" value="edit"  id="edit" onclick="edited()" >
+    </form>
+
+</body>
+</html>

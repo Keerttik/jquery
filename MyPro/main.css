@@ -1,0 +1,13 @@
+label{
+    color: #133131;
+    font-style: italic;
+}
+
+
+ .btn{
+    width: 100px;
+    margin-left: 120px;
+    text-shadow: #133131;
+    box-shadow: 0 4px 8px 0 rgba(17, 2, 2, 0.2), 0 6px 20px 0 rgb(39, 4, 4);
+    text-align: center;
+  }
